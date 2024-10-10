@@ -1,0 +1,99 @@
+ /* Custom vibrant color palette */
+ :root {
+    --primary-color: #8e44ad;  /* Rich purple */
+    --secondary-color: #f39c12; /* Bright yellow-orange */
+    --accent-color: #16a085;    /* Cool teal green */
+    --background-color: #ecf0f1; /* Soft light gray background */
+    --input-background: #ffffff; /* White for input backgrounds */
+    --input-border: #bdc3c7;    /* Light gray border for inputs */
+    --button-hover: #d35400;    /* Deep orange for button hover */
+    --text-color: #34495e;      /* Darker blue-gray for text */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 15px;
+    background-color: var(--input-background);
+    border: 2px solid var(--input-border);
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(142, 68, 173, 0.2);
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+}
+
+/* Signup link style */
+p {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
